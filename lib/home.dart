@@ -188,9 +188,14 @@ class _HomeState extends State<Home> {
                                     "Update Task",
                                     style: TextStyle(color: colorprim),
                                   ),
-                                  Icon(
-                                    Icons.cancel,
-                                    color: colorprim,
+                                  InkWell(
+                                    onTap: () {
+                                      Navigator.pop(context);
+                                    },
+                                    child: Icon(
+                                      Icons.cancel,
+                                      color: colorprim,
+                                    ),
                                   )
                                 ],
                               ),
@@ -287,9 +292,14 @@ class _HomeState extends State<Home> {
                                   "Add Task",
                                   style: TextStyle(color: colorprim),
                                 ),
-                                Icon(
-                                  Icons.cancel,
-                                  color: colorprim,
+                                InkWell(
+                                  onTap: () {
+                                    Navigator.pop(context);
+                                  },
+                                  child: Icon(
+                                    Icons.cancel,
+                                    color: colorprim,
+                                  ),
                                 )
                               ],
                             ),
@@ -337,7 +347,7 @@ class _HomeState extends State<Home> {
                                         primary: colorprim,
                                       ),
                                       icon: Icon(Icons.check),
-                                      label: Text("Update It"))
+                                      label: Text("Add It"))
                                 ],
                               ),
                             ],
